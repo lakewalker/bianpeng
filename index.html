@@ -30,7 +30,12 @@ color: black;
 <script type="text/javascript">
 $(window.body).ready(function() {
 	console.log("ready");
+	$.getJSON("ajax/params.json", function(data) {
+		console.log(data);
+		console.log(data.length);
+	});
 });
 </script>
 </body>
 </html>
+
